@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Cogniscape Android</title>
+  <meta name="description" content="Privacy policy for the Cogniscape Android navigation app for blind and visually impaired users." />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1419;
+      --fg: #e8eaed;
+      --muted: #9aa0a6;
+      --link: #8ab4f8;
+      --border: #3c4043;
+      --focus: #fdd663;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --fg: #202124;
+        --muted: #5f6368;
+        --link: #1a73e8;
+        --border: #dadce0;
+        --focus: #174ea6;
+      }
+    }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--fg);
+    }
+    .skip {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      padding: 0.75rem 1rem;
+      background: var(--fg);
+      color: var(--bg);
+      z-index: 100;
+      font-weight: 600;
+    }
+    .skip:focus {
+      left: 0.5rem;
+      top: 0.5rem;
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+    header {
+      padding: 1.5rem 1.25rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    main, footer {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 1.25rem 1.25rem 3rem;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+      color: var(--muted);
+      font-size: 0.9375rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+      margin: 0 0 0.5rem;
+      font-weight: 700;
+    }
+    .meta { color: var(--muted); font-size: 0.9375rem; margin: 0; }
+    h2 {
+      font-size: 1.25rem;
+      margin: 2rem 0 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+      font-weight: 650;
+    }
+    h2:first-of-type { border-top: none; margin-top: 1.25rem; padding-top: 0; }
+    h3 { font-size: 1.0625rem; margin: 1.25rem 0 0.5rem; font-weight: 650; }
+    p, ul { margin: 0 0 1rem; }
+    ul { padding-left: 1.35rem; }
+    li { margin-bottom: 0.35rem; }
+    a:link, a:visited { color: var(--link); }
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+    .summary {
+      background: color-mix(in srgb, var(--muted) 12%, transparent);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 1rem 1.15rem;
+      margin: 1.25rem 0 1.5rem;
+    }
+    .summary h2 {
+      margin-top: 0;
+      padding-top: 0;
+      border: none;
+      font-size: 1.1rem;
+    }
+    address { font-style: normal; }
+    .note { font-size: 0.9375rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <header role="banner">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Cogniscape Android app (<code>com.cogniscape</code>) · Effective date: April 5, 2026</p>
+  </header>
+
+  <main id="main" role="main" tabindex="-1">
+    <section class="summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Summary</h2>
+      <p>
+        Cogniscape is a navigation app built for blind and visually impaired users of all ages. To provide turn-by-turn guidance, maps, search, and voice features, the app uses your <strong>device location</strong>, may use the <strong>microphone</strong> for voice commands, and uses the <strong>internet</strong> when available to reach public mapping and routing services. Much of your navigation data can stay <strong>on your device</strong> (for example offline maps and routing graphs you load). We describe below what information is processed, where it goes, and what permissions the app requests. Please also review policies from third parties such as Google when you use their services on your device.
+      </p>
+    </section>
+
+    <section aria-labelledby="who-heading">
+      <h2 id="who-heading">Who we are</h2>
+      <p>
+        This policy describes the Cogniscape Android application developed by the Cogniscape project (“<strong>Cogniscape</strong>,” “<strong>we</strong>,” or “<strong>us</strong>”). If you need to reach us about privacy, use the contact details at the end of this page.
+      </p>
+    </section>
+
+    <section aria-labelledby="collect-heading">
+      <h2 id="collect-heading">Information the app processes</h2>
+      <p>Depending on how you use Cogniscape, the app may process categories of information including:</p>
+      <ul>
+        <li><strong>Location and motion.</strong> Precise and approximate location from GPS and network sources, compass heading where available, and related sensor data used for navigation, rerouting, geofencing, and spatial audio. Background location may be used while navigation is active in line with Android background-location rules.</li>
+        <li><strong>Voice audio.</strong> Audio from the microphone when you use wake-word detection, voice commands, or speech recognition. The app includes <strong>on-device</strong> speech recognition (Vosk) for offline use. Depending on device settings and Android configuration, the system speech recognizer or other provider may also process audio when you use voice features online.</li>
+        <li><strong>Camera and images.</strong> When you use camera-based features (for example obstacle detection or machine-learning vision features), images or frames may be processed <strong>on the device</strong> using libraries such as CameraX, TensorFlow Lite, and Google ML Kit components included in the app. This processing is intended to run locally unless you use a separate feature that explicitly sends data elsewhere.</li>
+        <li><strong>Destinations, routes, and searches.</strong> Places you search for, routes you request, and navigation preferences (for example avoiding stairs or preferring accessible crossings). Queries you make while online may be sent to third-party services that power maps and routing (see below).</li>
+        <li><strong>Locally stored data.</strong> The app uses Room and similar on-device storage for road-network graphs, offline “city package” data, cached map tiles, favorites, and settings. Offline graph and package data is derived from <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> and similar sources under their licenses (commonly <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a> for OSM-derived databases).</li>
+        <li><strong>Settings and preferences.</strong> Options you configure in the app (audio, haptics, routing preferences, accessibility toggles, and similar). The app’s data model includes an <strong>analytics</strong> preference that is <strong>off by default</strong>; the current open-source build does not bundle a dedicated third-party analytics SDK in its Gradle dependencies. If we introduce optional analytics or telemetry in the future, we will update this policy and the in-app controls before collecting data under that feature.</li>
+        <li><strong>Device and app technical data.</strong> Information needed for the app to run (for example network connectivity state, app version, error information in logs on your device). Android may also collect diagnostics under your device and Google account settings.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="network-heading">
+      <h2 id="network-heading">When data is sent over the internet</h2>
+      <p>When you are online, Cogniscape may contact third-party services to provide features described in project documentation, including:</p>
+      <ul>
+        <li><strong>Routing (OSRM).</strong> Route requests may be sent to OSRM-compatible servers to compute walking or transit directions.</li>
+        <li><strong>Geocoding and search (Nominatim and related).</strong> Queries to look up addresses and place names may be sent to OpenStreetMap ecosystem services such as Nominatim.</li>
+        <li><strong>Points of interest (Overpass API).</strong> POI searches may use the Overpass API or similar OpenStreetMap-based endpoints.</li>
+        <li><strong>Map tiles (OSMDroid / OpenStreetMap).</strong> Map imagery and tiles may be downloaded and cached on your device.</li>
+      </ul>
+      <p>
+        Those services receive the data necessary to answer your request (which typically includes location or search terms tied to what you asked for). They are operated by third parties; their own terms and privacy policies apply. Cogniscape also uses <strong>Google Play services</strong> (for example the Location Services library) where present on the device; Google’s policies describe how those components operate.
+      </p>
+      <p>
+        When you load optional <strong>offline</strong> graphs or city packages from files or future community download sources, that data is stored on your device. Downloading a package from a URL you choose may expose your IP address and download metadata to the host you selected.
+      </p>
+    </section>
+
+    <section aria-labelledby="permissions-heading">
+      <h2 id="permissions-heading">Android permissions</h2>
+      <p>The app may request permissions including:</p>
+      <ul>
+        <li><code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>, and <code>ACCESS_BACKGROUND_LOCATION</code> for navigation.</li>
+        <li><code>RECORD_AUDIO</code> for voice commands and wake word features.</li>
+        <li><code>CAMERA</code> for camera-based assistance features.</li>
+        <li><code>INTERNET</code> for online maps, routing, and related network access.</li>
+        <li><code>FOREGROUND_SERVICE</code> and <code>FOREGROUND_SERVICE_LOCATION</code> to keep navigation running reliably.</li>
+        <li><code>VIBRATE</code> for haptic feedback.</li>
+        <li><code>WAKE_LOCK</code> for time-sensitive navigation and audio tasks.</li>
+        <li><code>RECEIVE_BOOT_COMPLETED</code> where the app supports starting or resuming behavior after device reboot (as configured in the product).</li>
+        <li><code>CALL_PHONE</code> if you use features that place phone calls (for example emergency or dial actions you initiate).</li>
+      </ul>
+      <p>You can review or revoke permissions in Android system settings; some features will not work without them.</p>
+    </section>
+
+    <section aria-labelledby="use-heading">
+      <h2 id="use-heading">How we use information</h2>
+      <p>We use the information described above to:</p>
+      <ul>
+        <li>Provide navigation, spatial audio guidance, rerouting, and arrival detection.</li>
+        <li>Run voice interaction, text-to-speech announcements, and accessibility-focused UI behavior.</li>
+        <li>Store and apply your preferences, including accessibility-first routing options.</li>
+        <li>Load and use offline map and routing data you choose to install.</li>
+        <li>Maintain app reliability and safety, and improve the product consistent with this policy and applicable law.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="share-heading">
+      <h2 id="share-heading">Sharing and third parties</h2>
+      <p>
+        Cogniscape does not sell your personal information. We share information only as needed to operate the app: for example, when your device sends queries to public mapping and routing APIs as described above, or when Google or other platform providers process data under their own services on your device. We may also disclose information if required by law or to protect rights and safety.
+      </p>
+    </section>
+
+    <section aria-labelledby="retention-heading">
+      <h2 id="retention-heading">Retention</h2>
+      <p>
+        Data stored on your device (settings, caches, offline packages, databases) remains until you clear app data, uninstall the app, or use in-app controls where available. Data held by third-party services is retained according to those operators’ policies and is outside our direct control.
+      </p>
+    </section>
+
+    <section aria-labelledby="security-heading">
+      <h2 id="security-heading">Security</h2>
+      <p>
+        We design the app to process sensitive navigation and accessibility data carefully, including on-device processing where appropriate. No method of transmission or storage is completely secure; use the app in line with your own risk and device security practices.
+      </p>
+    </section>
+
+    <section aria-labelledby="backup-heading">
+      <h2 id="backup-heading">Backup</h2>
+      <p>
+        Android backup and restore may copy certain app data according to your device backup settings and the app’s backup rules. If you use cloud backup, that data may be stored by your device manufacturer or account provider under their terms.
+      </p>
+    </section>
+
+    <section aria-labelledby="children-heading">
+      <h2 id="children-heading">Children and teens</h2>
+      <p>
+        Cogniscape is intended to be useful for blind and visually impaired people of <strong>all ages</strong>, including minors. The app is not intended to collect personal information from children beyond what is reasonably needed to provide navigation and accessibility features you (or a parent or guardian) choose to use. Parents and guardians should supervise minors’ use of location-enabled apps and review device permissions. If you believe we have collected personal information from a child in a way that should be deleted or restricted, contact us using the details below.
+      </p>
+    </section>
+
+    <section aria-labelledby="rights-heading">
+      <h2 id="rights-heading">Your choices and rights</h2>
+      <p>
+        Depending on where you live, you may have rights to access, correct, delete, or restrict certain processing of personal information, or to lodge a complaint with a supervisory authority. To exercise rights related to data Cogniscape holds about you (if any) outside what is stored only on your device, contact us. For data stored only on your phone, clearing app data or uninstalling the app is usually the most direct way to remove it.
+      </p>
+    </section>
+
+    <section aria-labelledby="changes-heading">
+      <h2 id="changes-heading">Changes to this policy</h2>
+      <p>
+        We may update this policy when the app or legal requirements change. The effective date at the top will be revised when we do. Continued use of the app after changes means you accept the updated policy.
+      </p>
+    </section>
+
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>For privacy questions or requests regarding Cogniscape:</p>
+      <address>
+        Email: <a href="mailto:support@cogniscape.app">support@cogniscape.app</a>
+      </address>
+      <p class="note">Project links referenced in documentation include <a href="https://github.com/cogniscape/android">github.com/cogniscape/android</a> for source and issues.</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>OpenStreetMap data © OpenStreetMap contributors, licensed under the Open Database License where applicable.</p>
+    <p>This page is designed to work with screen readers and keyboard navigation.</p>
+  </footer>
+</body>
+</html>
